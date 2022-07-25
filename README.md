@@ -39,17 +39,17 @@ I could've included these scripts in the dockerfile, but I figured you guys will
 
 ## Expected Outcomes ##
 ```main.py```
-"""
+```
 Connecting to Database
 Name is Currently None
 Name has been changed to Garfield
 Inserting Garfield into table cat
 ['Garfield', 'DDDD', 'Daniel']
 6.0
-"""
+```
 
 ```petShop.py```
-"""
+```
 Connecting to Database
 Inserting Felix into table cat
 Inserting Beeny into table dog
@@ -80,6 +80,7 @@ Table: dog, Timestamp: 2, Name: Beeny
 Table: cat, Timestamp: 3, Name: None
 ---------------------------------------
 ```
+```
 Traceback (most recent call last):
   File "C:\Users\kichi\Desktop\granify\petShop.py", line 50, in <module>
     petShop.logStats()
@@ -89,7 +90,7 @@ Traceback (most recent call last):
     raise Exception(f"Timestamp is out of range. Acceptable range is: [0,{self.timestamp}]")
 Exception: Timestamp is out of range. Acceptable range is: [0,8]
 ```
-"""
+
 
 PLEASE NOTE:
 The exception at the end is EXPECTED! If the input timestamp is out of range, it is expected to throw an exception.
