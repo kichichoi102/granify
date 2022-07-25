@@ -96,27 +96,30 @@ PLEASE NOTE:
 The exception at the end is EXPECTED! If the input timestamp is out of range, it is expected to throw an exception.
 
 ## Folder Structure ##
+```
 granify/
-    &nbsp;-src/
-        &nbsp;&nbsp;-dataAccessLayer/
-            &nbsp;&nbsp;&nbsp;-Data.py
-        &nbsp;&nbsp;-migrations/
-            &nbsp;&nbsp;&nbsp;-homework.sql
-        &nbsp;&nbsp;-models/
-            &nbsp;&nbsp;&nbsp;-Cat.py
-            &nbsp;&nbsp;&nbsp;-Dog.py
-        &nbsp;&nbsp;-service/
-            &nbsp;&nbsp;&nbsp;-usually files like petShop.py would go here. I left it in the same directory as main so it is easier to test (aka don't have to change directories every time)
-    &nbsp;-tests/
-        &nbsp;&nbsp;-test_cat.py
-        &nbsp;&nbsp;-test_data.py
-        &nbsp;&nbsp;-test_dog.py
-    &nbsp;Dockerfile
-    &nbsp;main.py
-    &nbsp;petShop.py
+    -src/
+        -dataAccessLayer/
+            -Data.py
+        -migrations/
+            -homework.sql
+        -models/
+            -Cat.py
+            -Dog.py
+        -service/
+            -usually files like petShop.py would go here. I left it in the same directory as main so it is easier to test (aka don't have to change directories every time)
+    -tests/
+        -test_cat.py
+        -test_data.py
+        -test_dog.py
+    Dockerfile
+    main.py
+    petShop.py
+```
 
 ## Deeper Dive ##
 As mentioned in the beginning, this follows the Data Access Layer pattern, where:
+```
 -`src`/
     - `dataAccessLayer`: directory contains the database interaction layer.
         - `Data.py`: part of the assignment that "accesses" the database.
@@ -126,3 +129,4 @@ As mentioned in the beginning, this follows the Data Access Layer pattern, where
 -`tests`/
     - Contains three tests: `test_cat.py`, `test_dog.py`, `test_data.py`.
     - These unit tests cover ~100% of Cat, Dog, and Data files.
+```
